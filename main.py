@@ -9,8 +9,8 @@ import time
 import traceback
 
 def get_data():
-    #APi数据接口
-    url='http://gfapi.mlogcn.com/weather/v001/hour?areacode=101010100&hours=24&key=thPj9ZWjsslM7RRq5cgAeBrZs773VslT'
+    #APi数据接口用自己的api接口
+    url='http://gfapi.mlogcn.com/weather/v001/hour?'
     r = requests.get(url)
     con = json.loads(r.text)["result"]
     return con
